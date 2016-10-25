@@ -3,6 +3,7 @@ package frames;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,7 +23,9 @@ public class Frame extends JFrame
 	
 	public Frame()
 	{
+		
 		buttonPanel = new JPanel();
+		buttonPanel.setLayout(new GridLayout(2, 2));
 		menuBar = new JMenuBar();
 		setSize(300,200);
 		setTitle("Background color");
